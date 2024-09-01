@@ -17,8 +17,8 @@ const Random = () => {
     const {data} =await axios.get(url); //Promise return krta hai
     const imageSource = data.data.images.downsized_large.url;
     console.log(imageSource);
-    setLoader(false);
     setGif(imageSource)
+    setLoader(false);
   }
 
   useEffect( () => {
